@@ -1,0 +1,110 @@
+/* general style */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.4;
+    background-color: #f0f0f0;
+}
+
+/* holding container */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(112, 118, 139, 0.911);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+
+}
+
+#wrapper{
+    flex-direction: column;
+    text-align: center;
+    background: #eee;
+    padding: 10px 0;
+    background: #868675;
+}
+
+#wrapper h1, #wrapper p{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#wrapper input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+#content ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+#content h2{
+    padding-left: 20px;
+}
+#content li{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 3px solid #ddd;
+    margin: 20px 10px;
+}
+
+#content li:hover{
+    border-color: #9361bf;
+}
+
+.delete{
+    background: #6192bf;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete :hover{
+    background-color: red;
+}
+
+#add-item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#add-item :hover{
+    background: #6192bf;
+}
+
+
+#add-item input{
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#add-item button{
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
